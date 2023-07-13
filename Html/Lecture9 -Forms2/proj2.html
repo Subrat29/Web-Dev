@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+  </head>
+  <body>
+    <form>
+      <h2>Job Application</h2>
+
+      <!-- Name -->
+      <label for="n1">Name:</label>
+      <br />
+      <input type="text" name="naam" id="n1" />
+
+      <br /><br />
+
+      <!-- Email -->
+      <label for="em1">Email:</label>
+      <br />
+      <input type="text" name="email" id="em1" />
+
+      <br /><br />
+
+      <!-- Phone -->
+      <label for="p1">Phone:</label>
+      <br />
+      <input type="tel" name="phoneno" id="p1" />
+
+      <br /><br />
+
+      <!-- Resume -->
+      <label for="f1">Resume:</label>
+      <br />
+      <input type="file" name="file1" id="f1" />
+
+      <br /><br />
+
+      <!-- Experience(Counter) -->
+      <label for="exp1">Experience(years):</label>
+      <br />
+      <input type="number" name="exp" id="exp1" min="0" max="10"/>
+
+      <br /><br />
+
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills:</legend>
+
+        <input type="checkbox" name="cbox1" id="cb1" />
+        <label for="cb1">HTML</label>
+    
+        <br>
+
+        <input type="checkbox" name="cbox2" id="cb2" />
+        <label for="cb2">CSS</label>
+
+        <br>
+
+        <input type="checkbox" name="cbox3" id="cb3" />
+        <label for="cb3">JAVA SCRIPT</label>
+
+      </fieldset>
+
+      <br /><br />
+
+      <!-- Highest Education -->
+      <label for="he1">Highest Education:</label>
+      <br>
+      <select name="heducation" id="he1">
+        <option value="none">None</option>
+        <option value="highschool">High School</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="graduate">Graduate</option>
+        <option value="fail">Fail</option>
+      </select>
+
+      <br /><br>
+
+      <!-- Availability -->
+      <label for="radiobuttons">Availability:</label>
+      <br>
+      <input type="radio" name="r" id="rb1">
+      <label for="rb1">Full-time</label>
+      <br>
+      <input type="radio" name="r" id="rb2">
+      <label for="rb2">Part-time</label>
+
+      <br><br>
+
+      <!-- Comments -->
+      <label for="cmt1">Additional Comments: </label>
+      <br>
+      <textarea name="textarea1" id="cmt1" cols="30" rows="10"></textarea>
+
+      <br><br>
+      
+      <!-- Button -->
+      <input type="button" value="Register">
+
+    </form>
+  </body>
+</html>
