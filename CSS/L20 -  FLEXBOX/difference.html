@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L20</title>
+    <style>
+      .container {
+        background-color: rgb(189, 189, 132);
+        border: 5px;
+        margin: 2px;
+        padding: 2px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+
+      /* difference between justify content and align items*/
+
+      /* Justify content : main axis ke along items ko align kr deta h
+      Align items : cross axis (means if main axis row li to cross axis column me hogi) ke along items align kr deta h */
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 50px;
+        width: 50px;
+        border: 2px solid brown;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      #box1 {
+        background-color: aqua;
+      }
+      #box2 {
+        background-color: blue;
+      }
+      #box3 {
+        background-color: darkorange;
+      }
+      #box4 {
+        background-color: thistle;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>
