@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 22</title>
+    <style>
+      :root {
+        --primary-color: brown;
+        --custom-width: 330px;
+      }
+
+      .container {
+        background-color: beige;
+        height: 650px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 100px;
+        width: 200px;
+      }
+      .box {
+        /* Custom variables */
+        --primary-color: brown;
+        --custom-width: 330px;
+
+        background-color: aquamarine;
+        width: var(--custom-width);
+        height: var(--custom-width);
+        border: 1px solid var(--primary-color);
+        margin: 5px;
+        padding: 5px;
+
+        /* Shadowing*/
+
+        /* box-shadow: 10px 15px black; */
+
+        /* box-shadow: 10px 15px 15px black; */
+
+        /* box-shadow: 10px 15px 15px 19px black; */
+
+        /* box-shadow: inset 10px 15px 15px 19px black; */
+
+        /* box-shadow: 10px 15px red, 19px 8px black; */
+
+        #head1 {
+          text-shadow: 10px 10px 1px rgb(221, 20, 20),
+            50px 50px 1px rgb(88, 225, 19), 30px 30px 1px rgb(42, 10, 228);
+            
+          /* text-shadow: yellow 12px 13px 2px; */
+
+          /* text-shadow: white 12px 13px; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="morty.jpg" alt="aa gya swaad" />
+        <h2 id="head1">Welcome to codeHelp</h2>
+        <p id="para1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In maxime
+          velit a ut officiis esse. Ut corrupti quibusdam eligendi maxime
+          delectus adipisci quasi recusandae odio?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
