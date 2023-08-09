@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        height: 50vw;
+        width: 220vh;
+        background-color: bisque;
+        border: 10px solid black;
+      }
+
+      .box {
+        width: 100px;
+        height: 80px;
+        background-color: blue;
+        border: 3px solid yellow;
+        border-radius: 10px;
+        margin: 10px;
+        position: relative;
+
+        /* animation-name: rightMovement;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(1, -0.4, 1, 1);
+        animation-direction: alternate;
+        animation-fill-mode: backwards; */
+
+        /* Shorthand animation property */
+
+        /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+        animation: 6s linear 1s infinite alternate none running rightMovement;
+      }
+
+      @keyframes rightMovement {
+        from {
+          top: 0;
+          left: 0;
+        }
+
+        to {
+          top: 0;
+          left: 1200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

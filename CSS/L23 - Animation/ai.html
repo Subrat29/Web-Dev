@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: 50vw;
+      width: 220vh;
+      background-color: bisque;
+      border: 10px solid black;
+    }
+
+    .box {
+      border-radius: 10px;
+      margin: 20px;
+      position: relative; /* Add this to ensure proper circle positioning */
+    }
+
+    #box1 {
+      width: 250px;
+      height: 60px;
+      background-color: blue;
+      border: 3px solid rgb(232, 225, 13);
+      position: relative;
+      animation: 6s linear 0s infinite alternate none running rightmovement;
+    }
+
+    #box2 {
+      width: 250px;
+      height: 60px;
+      background-color: rgb(18, 55, 204);
+      border: 3px solid yellow;
+      position: relative;
+      animation: 6s linear 0s infinite alternate none running leftmovement;
+    }
+
+    #circle {
+      width: 80px;
+      height: 80px;
+      background-color: blue;
+      border: 3px solid rgb(232, 225, 13);
+      border-radius: 100px;
+      margin: 10px;
+      position: absolute;
+      top: 30%;
+      left: 5%; /* Adjust the starting position */
+      animation: 10s ease-in-out 0s infinite alternate-reverse none running circlemovement;
+    }
+
+    @keyframes circlemovement {
+      0% {
+        top: 30%;
+        left: 5%;
+      }
+      25% {
+        top: 70%; /* Move down */
+        left: 40%;
+      }
+      50% {
+        top: 70%; /* Move further down */
+        left: 75%;
+      }
+      75% {
+        top: 30%; /* Move up */
+        left: 75%;
+      }
+      100% {
+        top: 30%;
+        left: 5%;
+      }
+    }
+
+    /* New rectangle animation */
+    #rectangle {
+      width: 200px;
+      height: 100px;
+      background-color: green;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      animation: 5s linear 0s infinite alternate none running rectanglemovement;
+    }
+
+    @keyframes rectanglemovement {
+      0%, 100% {
+        bottom: 10px;
+        right: 10px;
+      }
+      50% {
+        bottom: 60%;
+        right: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div id="box1"></div>
+      <div id="box2"></div>
+      <div id="circle"></div>
+      <div id="rectangle"></div> <!-- New rectangle element -->
+    </div>
+  </div>
+</body>
+</html>
