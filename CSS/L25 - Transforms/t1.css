@@ -1,0 +1,37 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rebeccapurple;
+    background-color: darkorange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin: auto; */
+    transition: all 1s linear 1s;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.5); */
+    /* transform: skew(45deg); */
+
+    /* transform: translate(500px); */
+    /* transform: translate(0,-500px); */
+
+    transform: scaleY(1.5);
+     
+}
+
+p {
+    font-size: 20px;
+}
