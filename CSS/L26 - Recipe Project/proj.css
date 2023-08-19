@@ -5,22 +5,21 @@
 }
 
 .container {
-    height: 100vh;
-    width: 217vh;
+    height: 100%;
+    width: 100%;
     overflow-x: none;
-    overflow-y: none;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
 }
 
 .navContainer {
-    width: 100vw;
-    background-color: rgb(162, 162, 217);
+    /* width: 100vw; */
     min-height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: linear-gradient(to top, #caf1dc 0%, #efeeb6 100%);
+    background-image: linear-gradient(to top, #0d46a8 0%, #82a6d2 100%);
 }
 
 nav {
@@ -38,10 +37,14 @@ nav {
     align-items: center;
 }
 
-#navLogo {}
+#navLogo {
+    font-size: 2.8rem;
+    color: azure;
+}
 
 a {
     text-decoration: none;
+    color: azure;
 }
 
 #navItems {
@@ -49,7 +52,48 @@ a {
     gap: 40px;
 }
 
-.footerBox {
-    background-image: linear-gradient(to top, #caf1dc 0%, #efeeb6 100%);
+.footerBox{
+    background-image: linear-gradient(to top, #4a46b7 0%, #6c99dc 100%);
+    width: 100%;
+    text-align: center;
+    min-height: 35px;
+}
 
+.footerBox p{
+    color: azure;
+    font-size: 1.5rem;
+}
+
+.contentBox{
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color:#b7c0c5;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 2rem;
+    box-shadow: 3px 3px 20px black;
+}
+
+.rightBox img{
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftbox h2{
+    font-size: 2rem;
 }
