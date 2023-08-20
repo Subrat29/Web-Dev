@@ -7,9 +7,11 @@
 .container {
     height: 100%;
     width: 100%;
-    overflow-x: none;
-    background-color: #e2e5e8;
-    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+    overflow-x: hidden;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
 }
 
 .navContainer {
@@ -52,23 +54,23 @@ a {
     gap: 40px;
 }
 
-.footerBox{
+.footerBox {
     background-image: linear-gradient(to top, #4a46b7 0%, #6c99dc 100%);
     width: 100%;
     text-align: center;
     min-height: 35px;
 }
 
-.footerBox p{
+.footerBox p {
     color: azure;
     font-size: 1.5rem;
 }
 
-.contentBox{
+.contentBox {
     width: 70%;
     margin: auto;
     /* border: 1px solid black; */
-    background-color:#b7c0c5;
+    background-color: #b7c0c5;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -76,24 +78,71 @@ a {
     box-shadow: 3px 3px 20px black;
 }
 
-.rightBox img{
+.rightBox {
     height: 300px;
-    width: 300px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+
+}
+
+.rightBox img {
+    height: 100%;
+    /* width: 300px; */
     border-radius: 20px;
 }
 
-.item{
+.rightBox:hover {
+    transform: scale(1.1);
+    transition: all 1s linear 0s;
+}
+
+.item {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.leftbox{
+.leftbox {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.leftbox h2{
+.leftbox h2 {
     font-size: 2rem;
 }
+
+.rightBox .overlap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(25, 24, 24, 0.4);
+    border-radius: 23px;
+
+    /* To align text in center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* In normal case no gray filter on image 1*/
+    opacity: 0;
+
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlap {
+    opacity: 1;
+}
+
+.rightBox .overlap {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/* i) put overflow-x:hidden in conatiner
+ii)give a height value in rightBox and assign height:100% in the rightBox img tag. This will remove the area below img */
