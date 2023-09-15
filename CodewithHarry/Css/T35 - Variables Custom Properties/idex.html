@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* global variable */
+        :root{
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+        .box{
+            /* variables */
+            /* --box-color: rgb(94, 214, 142); */
+
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 2px 5px;
+            background-color: var(--primary-color);
+            box-shadow: 3px 3px var(--danger-color);
+        }
+        .container{
+            --box-color: rgb(94, 214, 142);
+            display: flex;
+            background-color: var(--box-color);
+            align-items: center;
+            justify-content: center;
+            background-color: var(--box-color);
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+    </div>
+</body>
+</html>
