@@ -7,3 +7,4 @@ document.body.style.background = "red"
 
 // BOM (Browser Object Model) = represents additional objects provided by the browser(host environment) for working with everything except the document.
 // alert,prompt,confirt functions are also part of BOM
+// location.href = "https://codewithharry.com" --> it redirects to codewithharry website
