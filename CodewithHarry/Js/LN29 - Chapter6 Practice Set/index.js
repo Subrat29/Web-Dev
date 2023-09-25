@@ -45,3 +45,4 @@ if(num > 4)
 
 // Q5
 let clr = prompt("Enter color to change bg-color")
+document.body.style.background = clr
