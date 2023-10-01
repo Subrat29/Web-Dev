@@ -1,0 +1,18 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.yellow{
+    background-color: #e2e45f;
+    color: #fff;
+}
+
+.red{
+    background-color: #d75f5f;
+    color: #fff;
+}
+
+.text-dark{
+    color: black;
+}

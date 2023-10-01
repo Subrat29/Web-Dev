@@ -1,0 +1,11 @@
+.bulb{
+    background: #ffe851;
+}
+
+.bulb-container{
+    margin: 40px;
+    height: 341px;
+    width: 341px;
+    border-radius: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
