@@ -12,3 +12,7 @@ const add2 = (a,b) =>{
     return a+b;
 }
 console.log("ADD2 : " + add2(a,b))
+
+// the arrow function () => { /* Your code here */ }
+// has been replaced with the 
+// regular function function() { /* Your code here */ }. 
