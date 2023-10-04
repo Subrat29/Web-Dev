@@ -18,7 +18,7 @@ function loadScript(src, callback)
 
     script.onload = function(){
         console.log("script loaded\n" + src);
-        callback(src);
+        callback(null,src);
     }
 
     script.onerror = function(){
@@ -29,12 +29,21 @@ function loadScript(src, callback)
     document.body.appendChild(script);
 }
 
-function hello(src){
-    alert("hello script loaded\n" + src);
-}
-function gm(src){
-    alert("goodmorning script loaded\n" + src);
+function hello(error, src){
+    if(error){
+        console.log(error);
+        return;
+    }
+    alert("hello!\n script loaded\n" + src);
 }
 
-// loadScript("htjsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js", gm);
-loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js", gm);
+function goodmorning(error, src){
+    if(error){
+        console.log(error);
+        return;
+    }
+    alert("Good Morning!\n script loaded\n" + src);
+}
+
+loadScript("htjsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js", goodmorning);
+// loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js", goodmorning);
