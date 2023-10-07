@@ -14,7 +14,7 @@ let p2 = async ()=>{
         setTimeout(() => {
             resolve("Hacking Ashish's username ...");
             hkbox.innerHTML = "Hacking Ashish's username ...";
-        }, 2000);
+        }, 4000);
     })
 }
     
@@ -23,7 +23,7 @@ let p3 = async ()=>{
         setTimeout(() => {
             resolve("Username found! aashishfkr23 ...");
             hkbox.innerHTML = "Username found! aashishfkr23 ...";
-        }, 2000);
+        }, 6000);
     })
 }
 
@@ -32,7 +32,7 @@ let p4 = async ()=>{
         setTimeout(() => {
             resolve("Connecting to facebook ...");
             hkbox.innerHTML = "Connecting to facebook ...";
-        }, 2000);
+        }, 9000);
     })
 }
 
