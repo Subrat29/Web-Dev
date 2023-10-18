@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 9, 19);
+    color: rgb(255, 255, 255);
+    align-items: center;
+    height: 10rem;
+}
+
+.header h2 {
+    margin-top: 1rem;
+}
+
+.myDiv {
+    display: flex;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.todoList {
+    background-color: rgb(15, 9, 19);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.todo-item{
+margin: 10px;
+display:flex; 
+justify-content: space-between;
+color: aqua;
+font-size: 2rem;
+list-style-type:disc;
+}
+
+.todo-item button{
+    background-color: rgb(219, 11, 11);
+    margin-left: 3rem;
+}
+
+ul{
+    list-style-type: none;
+}

@@ -32,7 +32,15 @@ let p4 = async ()=>{
         setTimeout(() => {
             resolve("Connecting to facebook ...");
             hkbox.innerHTML = "Connecting to facebook ...";
-        }, 9000);
+        }, 8000);
+    })
+}
+let p5 = async ()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(() => {
+            resolve("Facebook hacked succesfully!");
+            hkbox.innerHTML = "Facebook hacked succesfully!";
+        }, 10000);
     })
 }
 
@@ -46,6 +54,8 @@ const hackerman = async ()=>{
     console.log(c);
     let d = await p4();
     console.log(d);
+    let e = await p5();
+    console.log(e);
 }
 
 hackerman();
