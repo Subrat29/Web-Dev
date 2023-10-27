@@ -1,3 +1,48 @@
+// Note: You can wrap your JavaScript code in an event listener that listens for the "DOMContentLoaded" event, which is
+// triggered when the HTML document has been fully loaded. This ensures that the elements exist when you try to access them.
+
+document.addEventListener("DOMContentLoaded", function () {
+  let outputBox = document.getElementById("inputAddress");
+  let generatePasswordButton = document.getElementById(
+    "generatePasswordButton"
+  );
+
+  generatePasswordButton.addEventListener("click", function () {
+    generatePassword(outputBox);
+  });
+
+  function generatePassword(outputBox) {
+    const passwordTypes = document.getElementsByName("flexRadioDefault");
+    let selectedType = "Super Strong"; // Default selection
+
+    // passwordTypes is an array-like collection of all the radio button elements that have the attribute name="flexRadioDefault"
+    passwordTypes.forEach((type) => {
+      if (type.checked) {
+        selectedType = type.nextElementSibling.innerText.trim();
+      }
+    });
+
+    let password = generatePasswordOfType(selectedType);
+    outputBox.value = password;
+  }
+
+  function generatePasswordOfType(passwordType) {
+    switch (passwordType) {
+      case "Weak":
+        return new WeakPassword().generatePassword(); // first create object and then call generatepass fn
+
+      case "Strong":
+        return new StrongPassword().generatePassword();
+
+      case "Funny":
+        return new FunnyPassword().generatePassword();
+
+      default:
+        return new SuperStrongPassword().generatePassword();
+    }
+  }
+});
+
 class PasswordGenerator {
   constructor() {
     this.password = this.generatePassword();
@@ -94,7 +139,7 @@ class FunnyPassword extends PasswordGenerator {
     let funnyPass = [
       "Password",
       "Incorrect",
-      "Password not found",
+      "Passwordnotfound",
       "Nopassword",
       "passwordKyaRakhuYrr",
       "OhhToYehaiMeraPassword",
@@ -106,12 +151,3 @@ class FunnyPassword extends PasswordGenerator {
     return this.getRandomItem(funnyPass);
   }
 }
-
-let pass1 = new WeakPassword();
-pass1.displayPassword("Weak");
-let pass2 = new StrongPassword();
-pass2.displayPassword("Strong");
-let pass3 = new SuperStrongPassword();
-pass3.displayPassword("SuperStrong");
-let pass4 = new FunnyPassword();
-pass4.displayPassword("Funny");
