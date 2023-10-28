@@ -1,0 +1,77 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size:x-large;
+}
+
+.nav-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content-list {
+    display: flex;
+    justify-content: center;
+    font-family: 'Merriweather', serif;
+    background-color:#4c1675;
+    width: 100%;
+}
+
+.nav-items {
+    margin-top: .9rem;
+    margin-right: 1.3rem;
+    color: #ffffff;
+}
+
+.nav-items:hover {
+    color:rgb(219, 168, 249);
+}
+
+ul {
+    list-style: none;
+}
+
+#parentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(236, 208, 255);
+}
+
+.alarmContainer{
+    background-color:rgb(164, 168, 167);
+    padding: 1.3rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+}
+
+.alarmBox {
+    background-color:rgb(249, 231, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+    padding: 2px;
+    font-size: 1.5em;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1rem;
+}
+
+#generateButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+
