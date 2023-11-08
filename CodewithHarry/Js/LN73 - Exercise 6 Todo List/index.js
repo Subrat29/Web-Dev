@@ -59,7 +59,8 @@ showAllTodo.addEventListener("click", function (event) {
 todoBox.addEventListener("click", function (event) {
   // event.target = refers to the element that triggered the event, which is the close button in this case.
   // event.target.parentElement  = refers to the parent element of the close button which is list
-  // Array.from(todoBox.children).indexOf(listItem) + 1 =  This line calculates the key (index) of the clicked todo item within the list. It first converts the todBox's children (the list of todo items) into an array using Array.from. Then, it finds the index of the listItem within the array, and finally, it adds 1 to the index since your code appears to use 1-based numbering.
+  // Array.from(todoBox.children).indexOf(listItem) + 1 =  This line calculates the key (index) of the clicked todo item within the list.
+  // It first converts the todBox's children (the list of todo items) into an array using Array.from. Then, it finds the index of the listItem within the array, and finally, it adds 1 to the index since your code appears to use 1-based numbering.
 
   if (event.target && event.target.classList.contains("btn-close")) {
     const listItem = event.target.parentElement;

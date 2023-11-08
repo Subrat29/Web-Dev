@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size:x-large;
+    font-size: x-large;
+    background-color: #e8c693;
 }
 
 .nav-contents {
@@ -14,7 +16,7 @@ html, body {
     display: flex;
     justify-content: center;
     font-family: 'Merriweather', serif;
-    background-color:#4c1675;
+    background-color: #4c1675;
     width: 100%;
 }
 
@@ -25,40 +27,42 @@ html, body {
 }
 
 .nav-items:hover {
-    color:rgb(219, 168, 249);
+    color: rgb(219, 168, 249);
 }
 
 ul {
     list-style: none;
 }
 
-#parentContainer{
+#parentContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color:rgb(236, 208, 255);
+    min-height: 100%;
+    /* height: 100%;
+    width: 100%; */
+    background-color: rgb(238, 217, 252);
 }
 
-.alarmContainer{
-    background-color:rgb(164, 168, 167);
-    padding: 1.3rem;
-    border-radius: 1rem;
-    margin-top: 5rem;
+.alarmContainer {
+    background-color: rgb(224, 178, 248);
+    border-radius: 0.5rem;
+    width: 90%;
+    max-width: 27.25em;
+    padding: 3.12em 5em;
+    margin-top: 3rem;
 }
 
-.alarmBox {
-    background-color:rgb(249, 231, 210);
+.timeBox {
+    background-color: rgb(249, 231, 210);
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 20px rgba(0,139,253,0.25);
-    padding: 2px;
+    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
     font-size: 1.5em;
+    padding: 0.1em 0em;
 }
 
-.inputs{
+.inputs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,12 +70,37 @@ ul {
     margin-top: 1rem;
 }
 
-#generateButton{
+.inputs input {
+    width: 2.3em;
+    height: 2.3rem;
+    font-size: 1.3em;
+    border: 1px solid #000000;
+    border-radius: 0.1em;
+    padding: 0.4em 0.2em;
+}
+
+#AlarmButton {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
 }
 
+.alarm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0.5rem 0;
+    background-color: rgb(255, 252, 224);
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(255, 57, 2, 0.25);
+}
 
+#alarmBox {
+    margin-top: 3rem;
+}
 
+.delete-alarm{
+    font-size: small;
+    margin: 10px;
+}
