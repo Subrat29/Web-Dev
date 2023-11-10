@@ -1,0 +1,2 @@
+# npm i -g nodemon (automatic reload server when file save)
+# run: nodemon servername.js
